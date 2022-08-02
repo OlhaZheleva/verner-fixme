@@ -16,3 +16,6 @@ RewriteRule . index.php [L]
 RewriteCond %{HTTPS} =off 
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
 </IfModule>
+
+Header set Cache-Control "no-cache"
+Header set Pragma "no-cache"
